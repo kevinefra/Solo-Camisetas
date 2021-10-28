@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+//HEADER
+.header {
+  width: 100%;
+  padding: 50px;
+  background-color: #57d;
+  text-align: center;
+}
+.header--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title--logo {
+  display: flex;
+  align-items: center;
+  & a {
+    text-decoration: none;
+    padding: 10px;
+  }
+  & a h1 {
+    color: #fff;
+    font-size: 25px;
+  }
+  & img {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+}
+
+.finder--cart {
+  display: flex;
+}
+.buscador {
+  display: flex;
+  align-items: center;
+  & img {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+  }
+  & input {
+    border-radius: 10px;
+  }
+}
+//NAV
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #333;
+}
+nav li {
+  list-style: none;
+  padding: 14px 20px;
+}
+nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+//MAIN
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+aside {
+  flex: 25%;
+  background-color: beige;
+  padding: 20px;
+}
+section {
+  flex: 75%;
+  background-color: lightblue;
+  padding: 20px;
+}
+//FOOTER
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #f54;
+}
+
+//MEDIA QUERIES
+@media screen and (max-width: 700px) {
+  nav,
+  .row {
+    flex-direction: column;
+  }
+}

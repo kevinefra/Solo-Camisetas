@@ -1,0 +1,142 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  padding: 50px;
+  background-color: #57d;
+  text-align: center;
+}
+
+.header--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title--logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title--logo a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.title--logo a h1 {
+  color: #fff;
+  font-size: 25px;
+}
+
+.title--logo img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+}
+
+.finder--cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.buscador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buscador img {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+}
+
+.buscador input {
+  border-radius: 10px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #333;
+}
+
+nav li {
+  list-style: none;
+  padding: 14px 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+}
+
+aside {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  background-color: beige;
+  padding: 20px;
+}
+
+section {
+  -webkit-box-flex: 75%;
+      -ms-flex: 75%;
+          flex: 75%;
+  background-color: lightblue;
+  padding: 20px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #f54;
+}
+
+@media screen and (max-width: 700px) {
+  nav,
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
