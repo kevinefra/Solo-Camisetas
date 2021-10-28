@@ -5,18 +5,20 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #fff;
 }
 //HEADER
 .header {
   width: 100%;
-  padding: 50px;
-  background-color: #57d;
+  padding: 15px;
+  background-color: #5f7bca;
   text-align: center;
 }
 .header--container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .title--logo {
   display: flex;
@@ -51,35 +53,47 @@ body {
     border-radius: 10px;
   }
 }
+//STORE
+.store {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
 //NAV
 nav {
   display: flex;
   flex-direction: row;
-  background-color: #333;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  margin: 15px 4px 15px 4px;
+  box-shadow: 4px 4px 32px -1px #000000;
+  border-radius: 2px;
 }
 nav li {
   list-style: none;
-  padding: 14px 20px;
+  padding: 14px 0px;
+  background-color: #5f7bca;
+  border-radius: 10px;
+  margin: 10px;
+  width: 160px;
+  text-align: center;
 }
 nav li a {
   text-decoration: none;
   color: #fff;
+  padding: 5px;
 }
 //MAIN
-.row {
+.productos {
   display: flex;
   flex-wrap: wrap;
   height: 100%;
 }
-aside {
-  flex: 25%;
-  background-color: beige;
-  padding: 20px;
-}
-section {
-  flex: 75%;
-  background-color: lightblue;
-  padding: 20px;
+
+.product--img {
+  height: 250px;
+  width: 200px;
 }
 //FOOTER
 footer {
@@ -93,5 +107,11 @@ footer {
   nav,
   .row {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header--container {
+    justify-content: center;
   }
 }

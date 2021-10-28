@@ -7,12 +7,13 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #fff;
 }
 
 .header {
   width: 100%;
-  padding: 50px;
-  background-color: #57d;
+  padding: 15px;
+  background-color: #5f7bca;
   text-align: center;
 }
 
@@ -26,6 +27,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .title--logo {
@@ -78,6 +81,17 @@ body {
   border-radius: 10px;
 }
 
+.store {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,20 +100,35 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #333;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  margin: 15px 4px 15px 4px;
+  -webkit-box-shadow: 4px 4px 32px -1px #000000;
+          box-shadow: 4px 4px 32px -1px #000000;
+  border-radius: 2px;
 }
 
 nav li {
   list-style: none;
-  padding: 14px 20px;
+  padding: 14px 0px;
+  background-color: #5f7bca;
+  border-radius: 10px;
+  margin: 10px;
+  width: 160px;
+  text-align: center;
 }
 
 nav li a {
   text-decoration: none;
   color: #fff;
+  padding: 5px;
 }
 
-.row {
+.productos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,20 +137,9 @@ nav li a {
   height: 100%;
 }
 
-aside {
-  -webkit-box-flex: 25%;
-      -ms-flex: 25%;
-          flex: 25%;
-  background-color: beige;
-  padding: 20px;
-}
-
-section {
-  -webkit-box-flex: 75%;
-      -ms-flex: 75%;
-          flex: 75%;
-  background-color: lightblue;
-  padding: 20px;
+.product--img {
+  height: 250px;
+  width: 200px;
 }
 
 footer {
@@ -137,6 +155,14 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header--container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */
