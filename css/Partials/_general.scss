@@ -53,47 +53,74 @@ body {
     border-radius: 10px;
   }
 }
+//NAV
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #5f7bca30;
+  margin: 15px 4px 15px 4px;
+  box-shadow: 4px 4px 32px -1px #000000;
+  border-radius: 2px;
+}
+.nav__ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 8px 0 8px 0;
+}
+.nav__ul li {
+  list-style: none;
+  width: 200px;
+  padding: 10px;
+  background-color: #5f7bca;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  & a {
+    padding: 14px 0px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+  }
+}
+
+//MAIN
 //STORE
 .store {
   display: flex;
   flex-direction: column;
   padding: 0;
 }
-//NAV
-nav {
+.store__products {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  align-items: center;
-  background-color: #fff;
-  margin: 15px 4px 15px 4px;
-  box-shadow: 4px 4px 32px -1px #000000;
-  border-radius: 2px;
-}
-nav li {
-  list-style: none;
-  padding: 14px 0px;
-  background-color: #5f7bca;
-  border-radius: 10px;
-  margin: 10px;
-  width: 160px;
-  text-align: center;
-}
-nav li a {
-  text-decoration: none;
-  color: #fff;
-  padding: 5px;
-}
-//MAIN
-.productos {
-  display: flex;
   flex-wrap: wrap;
-  height: 100%;
+}
+.store__products--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  box-shadow: 8px 8px 16px -1px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  max-width: 250px;
+}
+.product--name {
+  display: flex;
+  align-items: center;
+  background-color: #5f7bca45;
+  height: 20%;
+  margin: 0;
+  padding: 10px;
+  border-radius: 0 0px 8px 8px;
 }
 
 .product--img {
-  height: 250px;
-  width: 200px;
+  height: 80%;
+  width: 240px;
 }
 //FOOTER
 footer {
@@ -104,9 +131,11 @@ footer {
 
 //MEDIA QUERIES
 @media screen and (max-width: 700px) {
-  nav,
-  .row {
+  .nav__ul,
+  .store__products {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
