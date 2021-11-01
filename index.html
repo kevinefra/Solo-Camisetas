@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/app.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,61 +32,61 @@
       </div>
     </header>
     <section class="main">
-      <nav class="nav">
-        <ul class="nav__ul">
-      <li><a href="#">Todos los productos</a></li>
-      <li><a href="#">Internacionales</a></li>
-      <li><a href="#">Nacionales</a></li>
-      <li><a href="#">Retro</a></li>
-    </ul>
+      <nav class="category">
+        <div class="category__list">
+    <a href="#" class="category__item" category="all">Todos los productos</a>
+    <a href="#" class="category__item" category="internacionales">Internacionales</a>
+    <a href="#" class="category__item" category="nacionales">Nacionales</a>
+    <a href="#" class="category__item" category="retro">Retro</a>
+        </div>
       </nav>
       <div class="store">
-        <div class="store__products">
-          <div class="store__products--item">
+        <div class="products">
+          <div class="product-item" category="retro">
             <img src="assets/camiseta-boca-retro.png" alt="Camiseta-boca-retro" class="product--img">
             <p class="product--name">Camiseta de Boca Retro $4500</p>
           </div>
-          <div class="store__products--item">
+          <div class="product-item" category="nacionales">
             <img src="assets/camiseta-suplente-boca.png" alt="Camiseta-boca-suplente" class="product--img">
             <p class="product--name">Camiseta de Boca Suplente 2020/21 $6500</p>
           </div>
-          <div class="store__products--item">
+          <div class="product-item" category="retro">
             <img src="assets/camiseta-barcelona-retro.png" alt="Camiseta-barcelona-retro" class="product--img">
             <p class="product--name">Camiseta de  FC Barcelona Retro $5000</p>
           </div>
-          <div class="store__products--item">
+          <div class="product-item" category="retro">
             <img src="assets/camiseta-milan-retro.png" alt="Camiseta-milan-retro" class="product--img">
             <p class="product--name">Camiseta de AC Milan Retro $4800</p>
           </div>
-          <div class="store__products--item">
+          <div class="product-item" category="retro">
             <img src="assets/camiseta-francia-retro.png" alt="Camiseta-francia-retro" class="product--img">
             <p class="product--name">Camiseta de Francia Retro $5500</p>
           </div>
-          <div class="store__products--item">
+          <div class="product-item" category="nacionales">
             <img src="assets/camiseta-racing-nacional.png" alt="Camiseta-racing" class="product--img">
             <p class="product--name">Camiseta de Racing $4000</p>
           </div>
-          <div class="store__products--item">
+          <div class="product-item" category="nacionales">
             <img src="assets/camiseta-ferro.png" alt="Camiseta-ferro" class="product--img">
             <p class="product--name">Camiseta de Ferro Carril Oeste $3500</p>
           </div>
-          <div class="store__products--item">
+          <div class="product-item" category="nacionales">
             <img src="assets/camiseta-talleres.png" alt="Camiseta-talleres" class="product--img">
             <p class="product--name">Camiseta de Talleres $3800</p>
           </div>
-          <div class="store__products--item">
+          <div class="product-item" category="internacionales">
             <img src="assets/camiseta-city.png" alt="Camiseta-city" class="product--img">
             <p class="product--name">Camiseta de Manchester City $6000</p>
           </div>
-          <div class="store__products--item">
+          <div class="product-item" category="internacionales">
             <img src="assets/camiseta-psg.png" alt="Camiseta-psg" class="product--img">
             <p class="product--name">Camiseta de Paris Saint Germain $8000</p>
           </div>
-          <div class="store__products--item">
+          <div class="product-item" category="internacionales">
             <img src="assets/camiseta-bayer.png" alt="Camiseta-Bayer" class="product--img">
             <p class="product--name">Camiseta de Bayer Munich $6000</p>
           </div>
-          <div class="store__products--item">
+          <div class="product-item" category="internacionales">
             <img src="assets/camiseta-real.png" alt="Camiseta-real" class="product--img">
             <p class="product--name">Camiseta de Real Madrid $6500</p>
           </div>
@@ -113,5 +115,5 @@
       </div>
     </footer>
   </body>
-  <script src="js/app.js"></script>
+
 </html>
