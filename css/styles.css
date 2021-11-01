@@ -163,8 +163,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 10px;
-  -webkit-box-shadow: 8px 8px 16px -1px rgba(0, 0, 0, 0.5);
-          box-shadow: 8px 8px 16px -1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 8px 8px 16px -1px #00000080;
+          box-shadow: 8px 8px 16px -1px #00000080;
   border-radius: 10px;
   max-width: 250px;
 }
@@ -189,10 +189,84 @@ body {
   width: 240px;
 }
 
-footer {
+.footer {
   padding: 20px;
   text-align: center;
-  background-color: #f54;
+  background-color: #5f7bca;
+}
+
+.footer--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.rights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.rights p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacto p {
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contacto__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.contacto__ul li {
+  list-style: none;
+  margin: 4px;
+}
+
+.contacto__img {
+  display: none;
+}
+
+.contacto__img img {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
 }
 
 @media screen and (max-width: 700px) {
@@ -216,6 +290,18 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .contacto__ul {
+    display: none;
+  }
+  .contacto__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=styles.css.map */

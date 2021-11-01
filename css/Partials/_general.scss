@@ -11,7 +11,7 @@ body {
 .header {
   width: 100%;
   padding: 15px;
-  background-color: #5f7bca;
+  background-color: $base-color;
   text-align: center;
 }
 .header--container {
@@ -75,7 +75,7 @@ body {
   list-style: none;
   width: 200px;
   padding: 10px;
-  background-color: #5f7bca;
+  background-color: $base-color;
   border-radius: 10px;
   text-align: center;
   margin: 10px;
@@ -104,7 +104,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 10px;
-  box-shadow: 8px 8px 16px -1px rgba(0, 0, 0, 0.5);
+  box-shadow: 8px 8px 16px -1px #00000080;
   border-radius: 10px;
   max-width: 250px;
 }
@@ -124,10 +124,53 @@ body {
   width: 240px;
 }
 //FOOTER
-footer {
+.footer {
   padding: 20px;
   text-align: center;
-  background-color: #f54;
+  background-color: $base-color;
+}
+.footer--container {
+  display: flex;
+  justify-content: space-around;
+}
+.rights {
+  display: flex;
+  align-items: flex-end;
+  & p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  & p {
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+.contacto__ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  & li {
+    list-style: none;
+    margin: 4px;
+  }
+}
+.contacto__img {
+  display: none;
+  & img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+  }
 }
 
 //MEDIA QUERIES
@@ -143,5 +186,12 @@ footer {
 @media screen and (max-width: 550px) {
   .header--container {
     justify-content: center;
+  }
+  .contacto__ul {
+    display: none;
+  }
+  .contacto__img {
+    display: flex;
+    flex-direction: column;
   }
 }
