@@ -36,6 +36,9 @@ body {
     height: 80px;
     padding: 10px;
   }
+  & img:hover {
+    transform: rotate(90deg);
+  }
 }
 
 .finder--cart {
