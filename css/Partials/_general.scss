@@ -44,17 +44,21 @@ body {
 .finder--cart {
   display: flex;
 }
-.buscador {
+.buscador-form {
   display: flex;
   align-items: center;
-  & img {
-    height: 50px;
-    width: 50px;
-    padding: 10px;
-  }
+
   & input {
     border-radius: 10px;
+    padding: 5px;
   }
+}
+
+.btn-submit {
+  margin-left: 3px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border-radius: 1px solid #aaa;
 }
 //NAV
 .category {
