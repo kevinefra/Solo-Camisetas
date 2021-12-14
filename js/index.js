@@ -94,7 +94,10 @@ let insertarProd = (productos) => {
     productsContainer.innerHTML += `
     <div   class="product-item" category="retro">
               <img src="${camiseta.imagen}" alt="${camiseta.equipo}/${camiseta.descripcion}" class="product--img">
+              <div class="descriptionProd"> 
               <p class="product--name">${camiseta.equipo} ${camiseta.descripcion} <br>Precio: $${camiseta.precio}</p>
+              <button type="button" class="btn btn-primary" id="btnCart"> Agregar al carrito</button>
+              </div>
             </div>
     `;
   });
@@ -108,16 +111,16 @@ let mostrarProd = () => {
 //Inicializando la función cuando carga la página
 window.onload = mostrarProd;
 
+//Funcion de buscador
+
 let buscador = document.querySelector("#buscador");
 let buscadorForm = document.querySelector("#formBuscador");
-
-//Funcion de buscador
 
 const manejoBusqueda = (e) => {
   e.preventDefault();
   productsContainer.innerHTML = "";
   if (buscador.value === "") {
-    return;
+    mostrarProd();
   }
 
   let filtroCat = camisetas.filter(
@@ -128,7 +131,10 @@ const manejoBusqueda = (e) => {
   );
   insertarProd(filtroCat);
   insertarProd(filtroEquipo);
+
   buscador.value = "";
 };
 
 buscadorForm.addEventListener("submit", manejoBusqueda);
+
+//Agregando productos al carrito

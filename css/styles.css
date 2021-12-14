@@ -176,24 +176,28 @@ body {
   transition: all 0.4s;
 }
 
-.product--name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.descriptionProd {
   background-color: #5f7bca45;
-  height: 20%;
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 10px;
   border-radius: 0 0px 8px 8px;
   width: 100%;
 }
 
+.product--name {
+  margin: 4px;
+  width: 100%;
+}
+
 .product--img {
-  height: 80%;
+  height: 240px;
   width: 240px;
+}
+
+.btn {
+  width: 100%;
 }
 
 .footer {
