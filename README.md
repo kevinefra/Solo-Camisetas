@@ -8,4 +8,4 @@ Tecnologías utilizadas:
 - CSS
 - SASS
 - JavaScript
-- JQuery
+
